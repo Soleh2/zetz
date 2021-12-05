@@ -4,7 +4,7 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 %readmore`.trimStart(),
-  header: '┌「 *%category* 」',
+  header: '┌「 %category 」',
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
@@ -249,7 +249,7 @@ function ucapan() {
     res = "selamat pagi"
   }
   if (time > 10) {
-    res = "selamat sialng"
+    res = "selamat siang"
   }
   if (time >= 15) {
     res = "selamat sore"
